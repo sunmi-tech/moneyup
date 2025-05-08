@@ -16,12 +16,19 @@
     "jsx": "react-jsx",
 
     /* Linting */
+    // 엄격한 타입 체크 활성화(null 체크 등 다포함)
     "strict": true,
+    // 사용되지않는 지역변수 에러
     "noUnusedLocals": true,
+    // 사용되지 않는 함수 매개변수 에러
     "noUnusedParameters": true,
-    "erasableSyntaxOnly": true,
+    // 대소문자 일관성 체크
+    "forceConsistentCasingInFileNames": true,
+    // switch 문에서 break 문이 없는 경우 에러
     "noFallthroughCasesInSwitch": true,
+    // 사이드 이펙트가 있는 import를 명확히 하지 않으면 에러
     "noUncheckedSideEffectImports": true
   },
+  // src 폴더만 타입체크 대상으로 포함시킴
   "include": ["src"]
 }
